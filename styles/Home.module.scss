@@ -1,0 +1,143 @@
+.main-page {
+  display: flex;
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    height: 440px;
+    width: 108%;
+    background: #d0826f;
+    top: 0;
+    right: 0;
+    z-index: 9;
+    transform: rotate(10deg) translateY(-250px) translateX(30px);
+  }
+}
+
+.left-col {
+  width: 22%;
+  min-height: 100vh;
+  background: #dfe0e0;
+}
+
+.list-with-title {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    height: 330px;
+    width: 630px;
+    background: #3b4358;
+    top: 0;
+    left: 0;
+    transform: rotate(-30deg) translateX(-20%) translateY(-35%);
+  }
+
+  &__content {
+    padding-left: 55px;
+    padding-right: 30px;
+    margin-bottom: 50px;
+    ul {
+      list-style: none;
+      padding-left: 0;
+      li {
+        color: #263547;
+        font-weight: 300;
+        margin-bottom: 10px;
+        font-size: 12px;
+      }
+    }
+  }
+
+  &__title {
+    color: #263547;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}
+
+.right-col {
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-top: 350px;
+  &-container {
+    max-width: 80%;
+    margin: auto;
+  }
+}
+
+.cv-header {
+  margin-bottom: 80px;
+  &__name {
+    font-size: 70px;
+    text-transform: uppercase;
+    color: #d0826f;
+    letter-spacing: 8px;
+    margin-bottom: 0;
+  }
+
+  &__job {
+    text-transform: uppercase;
+    color: #d0826f;
+    letter-spacing: 8px;
+  }
+}
+.profile-img {
+  position: relative;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  padding-top: 200px;
+  margin-bottom: 60px;
+  img {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}
+
+.resume-section {
+  &__title {
+    text-transform: uppercase;
+    color: #d0826f;
+    letter-spacing: 4px;
+    font-weight: 600;
+    margin-bottom: 50px;
+  }
+
+  &__separator {
+    border: 2px solid #dfe0e0;
+    margin-bottom: 50px;
+  }
+}
+
+.about-description {
+  p {
+    font-size: 18px;
+    color: #263547;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 1.7rem;
+  }
+}
+
+.experience-item,
+.education-item {
+  margin-bottom: 40px;
+  h3 {
+    margin-bottom: 0;
+  }
+  &__meta {
+    font-weight: 300;
+    margin-top: 8px;
+  }
+
+  &__description {
+    font-weight: 300;
+    color: #263547;
+    line-height: 1.7rem;
+    padding-left: 30px;
+  }
+}
